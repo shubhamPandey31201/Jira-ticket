@@ -1,0 +1,295 @@
+/* astriek is used to select all the tags of html */
+
+/* for standard colors go to flatuicolors website */
+
+/* for icons visit font awesome wesite */
+
+/* you need to add cdn link of icon or anyother tags or css style that you copy paste from a site 
+   you will find the cdn tag by just search cdn of site same and paste tag to head of the html file */
+
+/* go to 93 beautiful css box shadow website for box shadow design */
+
+
+/* before writing any css make box-sizing zero and margin also padding  as zero*/
+* {
+
+    box-sizing: border-box;
+
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* flex is always added to the parent container i.e flext container not to the flex item */
+
+.tool-box {
+    height: 5rem;
+    background-color: #2c3e50;
+    display: flex;
+
+    align-items: center;
+
+}
+
+.priority-box {
+    height: 3rem;
+    width: 40%;
+    background-color: #34495e;
+    position: relative;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+
+}
+
+.tool-box>* {
+    margin-left: 5rem;
+    border-radius: 3px;
+
+
+}
+
+.action-box {
+    height: 60%;
+    width: 8rem;
+    background-color: #34495e;
+    position: relative;
+    display: flex;
+    color: lightgrey;
+
+
+
+
+
+
+
+}
+
+.action-box>* {
+    margin-left: 1rem;
+    background-color: #454c54;
+    font-size: 3rem;
+    color: #bdc3c7
+}
+
+.action-box>*:hover {
+    background-color: #7f8c8d;
+}
+
+.add {
+    width: 30%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.remove {
+    width: 30%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.color {
+    height: 2rem;
+    width: 15%;
+    background-color: lightpink;
+
+}
+
+.lightPink {
+    background-color: lightpink;
+}
+
+.lightGreen {
+    background-color: lightgreen;
+}
+
+.lightBlue {
+    background-color: lightblue;
+}
+
+.lightPurple {
+    background-color: #9b59b6;
+}
+
+.modal-container {
+    height: 20rem;
+    width: 20rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: purple;
+    position: absolute;
+
+    top: calc((100vh - 20rem)/2);
+    left: calc((100vw - 20rem)/2);
+    /* calc is a function in css for calculation */
+    /* when display is an none that means no content will be visible on the screen */
+    display: none;
+    flex-direction: column-reverse;
+}
+
+.priority-color-container {
+    width: 100%;
+    height: 25%;
+    background-color: #2f3542;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.textArea-container {
+    height: 75%;
+    width: 100%;
+    border: none;
+    
+    outline: none;
+    resize: none;
+    background-color: #dfe4ea;
+    padding: 2rem;
+    font-size: 20px;
+
+
+
+}
+
+.priority-color {
+    height: 40%;
+    width: 20%;
+
+}
+
+.default {
+    border: 3px solid;
+    border-color: #bdc3c7;
+
+}
+
+.ticket {
+    height: 12rem;
+    width: 15rem;
+    background-color: aqua;
+
+
+}
+
+.ticket-priority {
+    height: 1rem;
+}
+
+.ticket-id {
+    height: 2rem;
+    padding: 0.5rem;
+
+    background-color: #ecf0f1;
+}
+
+.ticket-content {
+    height: calc(100% - 1rem - 2rem - 2rem);
+    padding: 0.5rem;
+    background: #ecf0f1;
+    outline: none;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    justify-content: center;
+    gap: 2rem;
+    /* gap is used to give gap between two content ---- here ticket are content in this case */
+
+
+}
+
+.lock {
+    background-color: #ecf0f1;
+    height: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2rem;
+    padding-right: 1rem;
+    color: #bdc3c7;
+
+}
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+    .modal-container {
+        width: 60vw;
+        left: calc( ( 100vw - 60vw ) / 2 );
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 426px) {
+    .modal-container {
+        width: 75vw;
+        height: 55vh;
+        top: calc( ( 100vh - 55vh ) / 2 );
+        left: calc( ( 100vw - 75vw ) / 2 );
+        flex-direction: column-reverse;
+    }
+    .textArea-container {
+        width: 100%;
+        height: 75%;
+    }
+    .priority-color-container {
+        flex-direction: row;
+        width: 100%;
+        height: 25%;
+    }
+    .priority-color {
+        width: 17%;
+    }
+    .tool-box > * {
+        margin-left: 2rem;
+        border-radius: 2px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .modal-container{
+        width: 80vw;
+        height: 40vh;
+        top: calc((100vh - 40vh) / 2 );
+        left: calc((100vw - 80vw) / 2);
+        flex-direction: column-reverse;
+    }
+    .textArea-container {
+        width: 100%;
+        height: 75%;
+    }
+    .priority-color-container {
+        flex-direction: row;
+        width: 100%;
+        height: 25%;
+    }
+    .priority-color {
+        width: 17%;
+    }
+    .tool-box > * {
+        margin-left: 2rem;
+        
+        border-radius: 2px;
+    }
+    .action-box{
+        width:30%;
+    }
+    
+    
+
+
+
+}
+
+
+

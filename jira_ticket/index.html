@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="tool-box">
+        <div class="priority-box">
+            <div class="lightPink color"></div>
+            <div class="lightBlue color"></div>
+            <div class="lightGreen color"></div>
+            <div class="lightPurple color"></div>
+        </div>
+        <div class="action-box">
+            <div class="add">
+                <i class="fa-solid fa-plus fa-xs"></i>
+            </div>
+            <div class="remove">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+    </div>
+    <div class="main-container">
+
+
+
+    </div>
+    <div class="modal-container">
+        <textarea spellcheck="false" class="textArea-container"></textarea>
+        <!-- basically textarea is a container that provides area to write anything-->
+        <div class="priority-color-container">
+            <div class="lightPink priority-color"></div>
+            <div class="lightBlue priority-color"></div>
+            <div class="lightGreen priority-color"></div>
+            <div class="lightPurple priority-color default"></div>
+        </div>
+
+    </div>
+    <script src="https://unpkg.com/shortid-dist@1.0.5/dist/shortid-2.2.13.min.js"></script>
+    <!-- this is cdn for generating random id ----- it provides a function called shortid() that generates random id-->
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
